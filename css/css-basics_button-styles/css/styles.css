@@ -33,7 +33,7 @@ button {
   /*Style me! Change my border, set a border radius or what you want to try out. :) */
   /* border: solid pink 1px; */
   border-radius: 10px;
-  background-color: rgb(99, 145, 231);
+  background-color: lightskyblue;
   text-transform: uppercase;
   border: none;
   letter-spacing: 10pt;
@@ -48,10 +48,19 @@ button:hover {
 
 .button2 {
   /*Style me! Change my color, or my background-color. Or both! You can test out different color modes here - like HEX, RGB, ... */
+  background-color: pink;
+  border: solid lightgoldenrodyellow 5px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .button3 {
   /*Style me! You can test out changing the font, or font size, ...*/
+  background-color: lightgoldenrodyellow;
+  font-family: "Prata", serif;
+  font-weight: bold;
+  color: pink;
+  border: none;
+  text-transform: uppercase;
 }
 
 .button4 {

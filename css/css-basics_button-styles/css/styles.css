@@ -31,6 +31,19 @@ button {
 
 .button1 {
   /*Style me! Change my border, set a border radius or what you want to try out. :) */
+  /* border: solid pink 1px; */
+  border-radius: 10px;
+  background-color: rgb(99, 145, 231);
+  text-transform: uppercase;
+  border: none;
+  letter-spacing: 10pt;
+  font-weight: bold;
+  /* font-weight: 500pt; */
+}
+
+button:hover {
+  background-color: pink;
+  font-size: 11pt;
 }
 
 .button2 {

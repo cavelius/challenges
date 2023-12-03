@@ -24,6 +24,7 @@ main {
   height: 80px;
   width: 80px;
   text-align: center;
+  background-color: blue;
 }
 
 /**
@@ -37,17 +38,15 @@ main {
 
 .box--top-left {
   background-color: #aed6f1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  /* position: absolute; */
 }
 
 .box--top-center {
   background-color: #85c1e9;
   position: absolute;
   top: 0%;
-  right: 50%;
-  transform: translateX(50%);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .box--top-right {
@@ -77,12 +76,12 @@ main {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, 0%);
+  transform: translateX(-50%);
 }
 
 .box--bottom-right {
   background-color: #1b4f72;
   position: absolute;
-  bottom: 0;
   right: 0;
+  bottom: 0;
 }

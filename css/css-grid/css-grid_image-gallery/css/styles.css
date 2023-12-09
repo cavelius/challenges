@@ -40,6 +40,9 @@ body {
 .teaser-grid {
   min-width: 40rem;
   min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 
   /* Add styles to the grid container */
 }
@@ -51,34 +54,31 @@ body {
   font-weight: bold;
   background-size: cover;
   background-position: center;
-  display: grid;
-  grid-template-columns: 2;
-  grid-template-rows: 2;
 }
 
 .teaser-grid__teaser--spring {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("https://source.unsplash.com/random/600x300?spring");
-  grid-column: 1 / 2;
   grid-row: 1 / 2;
+  grid-column: 1 / 2;
 }
 .teaser-grid__teaser--summer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("https://source.unsplash.com/random/600x300?summer");
-  grid-column: 2 / 3;
   grid-row: 1 / 2;
+  grid-column: 2 / 3;
 }
 .teaser-grid__teaser--autumn {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("https://source.unsplash.com/random/600x300?autumn");
-  grid-column: 1 / 2;
   grid-row: 2 / 3;
+  grid-column: 1 / 2;
 }
 .teaser-grid__teaser--winter {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("https://source.unsplash.com/random/600x300?winter");
-  grid-column: 2 / 3;
   grid-row: 2 / 3;
+  grid-column: 2 / 3;
 }
 
 .teaser-grid__link {

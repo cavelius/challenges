@@ -19,3 +19,23 @@ console.clear();
 // 7. Which method is used to display an error message in the console? Use it do display the error message in the console.
 
 // Well done!
+
+// 1
+let coding = "Happy coding!";
+
+//2
+console.log(coding);
+
+//3
+let hacking = "Happy hacking!";
+
+//4
+console.log(hacking);
+
+//5
+console.clear();
+
+//6
+let error = "This is an error!";
+
+console.error(error);

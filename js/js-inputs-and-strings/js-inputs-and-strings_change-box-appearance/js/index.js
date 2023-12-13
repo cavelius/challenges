@@ -24,8 +24,7 @@ const inputRotation = document.querySelector("[data-js=input-rotation]");
 
 inputColor.addEventListener("input", () => {
   console.log("color");
-  const color = inputColor.value;
-  box.style.backgroundColor = `hsl(${color},100%, 50%)`;
+  box.style.backgroundColor = `hsl(${inputColor.value},100%, 50%)`;
 });
 
 inputRadius.addEventListener("input", () => {

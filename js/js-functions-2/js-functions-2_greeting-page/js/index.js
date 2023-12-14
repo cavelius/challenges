@@ -21,13 +21,32 @@ Change the contents of this page depending on the current day and time.
 */
 
 const display = document.querySelector('[data-js="display"]');
+const now = new Date();
+const day = now.getDay(); // returns a number representing the day of the week, starting with 0 for Sunday
+const hours = now.getHours();
+const minutes = now.getMinutes();
+console.log(`Today is day ${day} and the time is ${hours}:${minutes}.`);
+console.log(hours);
 
 function getGreeting() {
-  // Code here
+  if (hours > 6 && hours < 12) {
+    return "Good Morning";
+  } else if (hours > 13 && hours < 18) {
+    return "Good Afternoon";
+  } else if (hours > 19 && hours < 22) {
+    return "Good Evening";
+  } else {
+    return "Good Night";
+  }
 }
-
 function getDayColor() {
-  // Code here
+  if (day === 1) {
+    return "darkblue";
+  } else if (day > 2 && day < 5) {
+    return "lightblue";
+  } else {
+    return "hotpink";
+  }
 }
 
 display.textContent = getGreeting();

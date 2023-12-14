@@ -12,10 +12,19 @@ function showTosError() {
   tosError.removeAttribute("hidden");
 }
 
+hideTosError();
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   // --v-- write your code here --v--
+
+  const isChecked = tosCheckbox.checked;
+
+  if (!isChecked) {
+    showTosError();
+    return;
+  }
 
   // --^-- write your code here --^--
 

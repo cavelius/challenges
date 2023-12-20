@@ -25,8 +25,8 @@ function showWelcomeMessage(userName) {
 //   showWelcomeMessage(userName);
 // });
 
+handleUserLogin(showWelcomeMessage);
+
 handleUserLogin(function (userName) {
   showWelcomeMessage(userName);
 });
-
-handleUserLogin(showWelcomeMessage);

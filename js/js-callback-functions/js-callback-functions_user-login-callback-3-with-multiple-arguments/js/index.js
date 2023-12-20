@@ -25,3 +25,17 @@ handleUserLogin(showWelcomeMessage);
 handleUserLogin(function (userName, userRole) {
   console.log(`Welcome ${userName} you are loggedin now as ${userRole}.`);
 });
+
+function showWelcomeMessage(userName, userRole) {
+  console.log(
+    "Welcome " + userName + "! You are logged in now as " + userRole + "!"
+  );
+}
+
+handleUserLogin(showWelcomeMessage);
+
+handleUserLogin((userName, userRole) => {
+  console.log(
+    "Welcome " + userName + "! You are logged in now as " + userRole + "!"
+  );
+});

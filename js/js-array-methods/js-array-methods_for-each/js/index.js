@@ -20,11 +20,11 @@ const colors = [
 ];
 
 colors.forEach((color) => {
-  const box = document.createElement("div");
-  box.classList.add("color-box");
-  box.style.backgroundColour = color;
-  const body = document.querySelector("body");
-  document.body.append(box);
+  // const box = document.createElement("div");
+  // box.classList.add("color-box");
+  // box.style.backgroundColour = color;
+  // const body = document.querySelector("body");
+  // document.body.append(box);
 });
 
 function renderColorBox(color) {

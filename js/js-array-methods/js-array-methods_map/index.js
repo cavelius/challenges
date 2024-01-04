@@ -31,6 +31,7 @@ const lowerCaseAnswers = cards.map((card) => {
 
 const questionsAndAnswersTogether = cards.map((card) => {
   console.log(`${card.question} - ${card.answer}`);
+  console.log(`${card.question} - ${card.answer}`);
 }); // ["How often can I use <header>? - As often as you like.", ...]
 
 const questionAndAnswer = cards.map((card) => {

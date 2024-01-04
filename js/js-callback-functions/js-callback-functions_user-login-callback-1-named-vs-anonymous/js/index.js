@@ -12,9 +12,11 @@ function showWelcomeMessage() {
 }
 
 handleUserLogin(() => {
+  //arrow functions
   showWelcomeMessage();
 });
 
 handleUserLogin(function () {
+  // anonyme function
   showWelcomeMessage();
 });

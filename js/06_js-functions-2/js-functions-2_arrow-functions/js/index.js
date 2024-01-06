@@ -83,11 +83,13 @@ function isOddAndSmall(number) {
 }
 console.log(isOddAndSmall(7));
 
-// const add3 = (a, b, c) => a + b + c;
-
-function add3(a, b, c) {
+const add3 = (a, b, c) => {
   return a + b + c;
-}
+};
+
+// function add3(a, b, c) {
+//   return a + b + c;
+// }
 console.log(add3(1, 2, 2));
 
 // const repeat10 = (string) => string.repeat(10);

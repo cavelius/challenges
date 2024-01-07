@@ -83,10 +83,7 @@ function isOddAndSmall(number) {
 }
 console.log(isOddAndSmall(7));
 
-const add3 = (a, b, c) => {
-  return a + b + c;
-};
-
+const add3 = (a, b, c) => a + b + c;
 // function add3(a, b, c) {
 //   return a + b + c;
 // }

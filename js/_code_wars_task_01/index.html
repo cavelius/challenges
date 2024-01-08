@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //wandle den String "abracadabra" in ein array um
+      //[('a', 5), ('b', 2), ('r', 2), ('c', 1), ('d', 1)]
+
+      // const orderedCount = function (text) {
+      //   const arr = [...new Set(text)]; // gibt aus wie viele unterschiedliche Zeichen sich in dem String befinden (5)
+
+      //   return arr.map(function (char) {
+      //     return [char, text.split(char).length - 1];
+      //   });
+      // };
+
+      // orderedCount("abracadabra");
+      // console.log(orderedCount("abracadabra"));
+
+      var orderedCount = function (text) {
+        var arr = [];
+        for (var i = 0; i < text.length; ++i) {
+          var k = 0;
+          for (var j = 0; j < arr.length; ++j) if (arr[j][0] == text[i]) k++;
+          if (k == 0) {
+            for (var j = i; j < text.length; ++j) if (text[j] == text[i]) k++;
+            arr.push([text[i], k]);
+          }
+        }
+        return arr;
+      };
+      console.log(orderedCount("abracadabra"));
+    </script>
+  </body>
+</html>

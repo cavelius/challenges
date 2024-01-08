@@ -19,5 +19,32 @@ export async function fetchNewColor() {
 
   // --v-- your code here --v--
 
+  async function fetchNewColor() {
+    try {
+      const response = await fetch(colorApiUrl);
+
+      console.log("response", response);
+      if (response.ok) {
+        // Success (Good Response)
+        const data = await response.json();
+        console.log("data", data);
+        // return data;
+        const colorCode = data.hex.value;
+        console.log("Hex code", colorCode);
+        const colorName = data.name.value;
+        console.log("Color Name", colorName);
+        setColorToGuess(colorCode, colorName);
+      } else {
+        // Failure (Bad Response)
+        console.error("Bad Response");
+      }
+    } catch (error) {
+      // Failure (Network error, etc)
+      console.error("An Error occurred");
+    }
+  }
+
+  fetchNewColor();
+
   // --^-- your code here --^--
 }

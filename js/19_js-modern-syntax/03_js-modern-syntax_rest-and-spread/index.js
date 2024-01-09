@@ -14,12 +14,16 @@ const person = {
 };
 
 // example: export const {value 1} = myObject;
+const { age, ...contact } = person;
+console.log(age, contact);
 
 // EXERCISE 2
 // Use array destructuring to extract the variables "first" and "second";
 // all other items should go into a variable called "restOfList".
 
 const list = ["one", "two", "three", "four", "five"];
+const [first, second, ...restOfList] = list;
+console.log(first, second, restOfList);
 
 // EXERCISE 3
 // a) The `add` function does not work because it needs an array as argument.
@@ -39,7 +43,8 @@ export const sum = add(3, 2, 3, 2, 1, 2, 3, 4);
 // c) Make sure you understand what the spread syntax does here.
 
 const numbers = [3, 2, 1];
-export const result = add(numbers);
+export const result = add(...numbers);
+console.log(result);
 
 // EXERCISE 5
 // a) Create a variable `allFruits` which contains `anotherFruit` and `fruits`
@@ -49,3 +54,6 @@ export const result = add(numbers);
 
 const fruits = ["apple", "banana", "orange", "papaya"];
 const anotherFruit = "cherry";
+
+const allFruits = [...fruits, anotherFruit];
+console.log(allFruits);

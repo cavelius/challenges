@@ -31,7 +31,7 @@ console.log(first, second, restOfList);
 // c) Make sure you understand what the rest syntax does here.
 // d) Note that the optional chaining `?.` is used to prevent an error to happen.
 
-function add(allNumbers) {
+function add(...allNumbers) {
   return allNumbers.reduce?.((a, b) => a + b);
 }
 

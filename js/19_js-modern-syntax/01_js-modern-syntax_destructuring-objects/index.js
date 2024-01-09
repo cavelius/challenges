@@ -22,10 +22,10 @@ console.log(course);
 //  2.2: 'years' property into the variable 'age'.
 //  2.3: 'isAdmin' property into the variable 'isAdmin' (false, if no such property exists)
 
-// const user = { name: "John", years: 30 };
-// const { name, years: age, isAdmin = false } = user;
+const user = { name: "John", years: 30 };
+const { name, years: age, isAdmin = false } = user;
 
-// console.log(name, age, isAdmin);
+console.log(name, age, isAdmin);
 
 // EXERCISE 3
 // Extract the variables from the dog object and

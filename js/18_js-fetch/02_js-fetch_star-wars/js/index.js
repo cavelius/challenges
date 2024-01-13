@@ -49,7 +49,7 @@ async function fetchDataAndRender() {
   const response = await fetch("https://swapi.dev/api/people");
   console.log("response: ", response);
   const data = await response.json();
-  console.log("data: ", data);
+  // console.log("data: ", data);
   const cards = data.results;
 
   cards.forEach((card) => {

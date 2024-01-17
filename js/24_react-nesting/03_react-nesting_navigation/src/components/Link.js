@@ -1,6 +1,6 @@
-export default function Link(href, children) {
+export default function Link({ href, children }) {
   return (
-    <a href={href} className="navigation__link">
+    <a className="navigation__link" href={href}>
       {children}
     </a>
   );

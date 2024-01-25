@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.css";
+import Button from "./Button";
 
 export default function App() {
   function handleClick() {
@@ -14,16 +15,4 @@ export default function App() {
       onClick={handleClick}
     />
   );
-
-  function Button({ color, text, disabled, onClick }) {
-    return (
-      <button
-        style={{ backgroundColor: color }}
-        disabled={disabled}
-        onClick={onClick}
-      >
-        {text}
-      </button>
-    );
-  }
 }

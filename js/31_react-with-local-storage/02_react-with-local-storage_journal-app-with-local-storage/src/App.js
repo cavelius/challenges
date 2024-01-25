@@ -5,7 +5,7 @@ import EntryForm from "./components/EntryForm";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import { uid } from "uid";
-import useLocalStorageState from "use-local-storage-state";
+import useLocalStorage from "use-local-storage";
 
 const initialEntries = [
   {
